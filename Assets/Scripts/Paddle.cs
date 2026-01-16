@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Paddle : MonoBehaviour
 {
+      public int score = 0;
       public float speed = 30f;
       public float top;
       public float bottom;
@@ -52,4 +53,9 @@ public class Paddle : MonoBehaviour
          top = transform.position.y + _halfHeight;
          bottom = transform.position.y - _halfHeight;
       }
+
+      public void incrementScore()
+      {
+         score += 1;
+      }  
 }

@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
    public Ball ball;
-   public Paddle player1;
-   public Paddle player2;
+   public Paddle player1 = new Paddle();
+   public Paddle player2 = new Paddle();
 
    [SerializeField] private PauseScreen pauseScreen;
 
@@ -24,6 +24,18 @@ public class GameManager : MonoBehaviour
          pauseScreen = FindFirstObjectByType<PauseScreen>();
          // inits text
          pauseScreen.ResumeGame();
+      }
+   }
+
+   public void incrementScore(int playerNumber)
+   {
+      if (playerNumber == 1)
+      {
+         player1.incrementScore();
+      }
+      else
+      {
+         player2.incrementScore();
       }
    }
 

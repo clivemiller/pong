@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
    private Rigidbody2D _rb;
    private Collider2D _collider;
+   private GameManager _gameManager;
 
    [SerializeField]
    private Vector2 initialVelocity = new Vector2(2f, 2f);
@@ -14,6 +15,7 @@ public class Ball : MonoBehaviour
    {
          _rb = GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
+        _gameManager = FindAnyObjectByType<GameManager>();
    }
 
     void Start()
@@ -69,6 +71,15 @@ public class Ball : MonoBehaviour
             // Out of bounds horizontally => reset ball.
             if (position.x < minX || position.x > maxX)
             {
+               if (position.x < minX)
+               {
+                  _gameManager.incrementScore(1);
+               }
+               else
+               {
+                  _gameManager.incrementScore(2);
+               }
+
                 _rb.position = Vector2.zero;
                 Launch();
             }
