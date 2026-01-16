@@ -73,11 +73,11 @@ public class Ball : MonoBehaviour
             {
                if (position.x < minX)
                {
-                  _gameManager.incrementScore(1);
+                  _gameManager.incrementScore(2);
                }
                else
                {
-                  _gameManager.incrementScore(2);
+                  _gameManager.incrementScore(1);
                }
 
                 _rb.position = Vector2.zero;

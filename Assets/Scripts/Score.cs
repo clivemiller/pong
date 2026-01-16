@@ -21,13 +21,15 @@ public class Score : MonoBehaviour
          player2ScoreText = _gameManager.player2.score.ToString();
       }
       GetComponent<TMP_Text>().text = "Player 1: " + player1ScoreText + " - Player 2: " + player2ScoreText;
-      if (_gameManager.player1.score >= 10)
+      if (_gameManager.player1.score >= 3)
       {
          GetComponent<TMP_Text>().text = "Player 1 WINS!";
+         Time.timeScale = 0f;
       }
-      else if (_gameManager.player2.score >= 10)
+      else if (_gameManager.player2.score >= 3)
       {
          GetComponent<TMP_Text>().text = "Player 2 WINS!";
+         Time.timeScale = 0f;
       }
    }
 }

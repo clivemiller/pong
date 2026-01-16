@@ -13,8 +13,8 @@ public class PauseScreen : MonoBehaviour
 
    public void PauseGame()
    {
-      Time.timeScale = 0f;
       HandleShowText(true);
+      Time.timeScale = 0f;
    }
 
    private void HandleShowText(bool show)
