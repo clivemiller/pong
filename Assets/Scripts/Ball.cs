@@ -23,11 +23,11 @@ public class Ball : MonoBehaviour
 
     private void Launch()
     {
-        float x = Mathf.Abs(initialVelocity.x) * (UnityEngine.Random.value < 0.5f ? -1f : 1f);
-        float y = Mathf.Abs(initialVelocity.y) * (UnityEngine.Random.value < 0.5f ? -1f : 1f);
+        float x = Mathf.Abs(initialVelocity.x) * (UnityEngine.Random.value < 0.5f ? -2f : 2f);
+        float y = Mathf.Abs(initialVelocity.y) * (UnityEngine.Random.value < 0.5f ? -2f : 2f);
         _rb.linearVelocity = new Vector2(x, y);
     }
-    
+
      private float GetExtentY()
     {
             return _collider.bounds.extents.y;

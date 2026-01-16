@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Paddle : MonoBehaviour
 {
-      public float speed = 25f;
+      public float speed = 30f;
       public float top;
       public float bottom;
 

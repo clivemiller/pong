@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
       if (pauseScreen == null)
       {
          pauseScreen = FindFirstObjectByType<PauseScreen>();
+         // inits text
+         pauseScreen.ResumeGame();
       }
    }
 
