@@ -11,4 +11,4 @@ Open the Unity Hub and click Add -> Add project from disk -> Select your File.
 
 Open your project
 
-Once in, click scenes, then sample scenes to open the pong game in the window. You can then run it in the window or build it from the file tab
+Once in, click scenes, then sample scene to open the pong game in the window. You can then run it in the window or build it from the file tab
