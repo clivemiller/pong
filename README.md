@@ -12,7 +12,7 @@ This will copy the repository onto your disk and let you view, edit, and run the
 
 In order to begin working with the unity game, you will first need to open it in unity.
 
-First, install Unity Hub and Unity 6. Complete the installation and setup.
+First, install Unity Hub and Unity 6000.3.4f1. Complete the installation and setup.
 
 Open the Unity Hub and click the Add button in the projects tab.
 Then in the dropdown menu, click Add project from disk and select the cloned repository.
